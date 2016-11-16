@@ -1,0 +1,191 @@
+hr {
+	color:sienna;
+}
+
+body {
+	overflow: hidden;
+	margin: 0px;
+	/* Disable unintended selection in the webpage, solution was found here
+	  http://stackoverflow.com/questions/12315476/how-to-disable-selection-of-text-on-a-web-page */
+  -webkit-user-select: none;
+	 -moz-user-select: -moz-none;
+	  -ms-user-select: none;
+		  user-select: none;
+		
+}
+div {
+	position: absolute;
+	
+}
+
+#content {
+	width: 100%;
+	height: 100%;
+	background-color: black;
+}
+.header {
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 10%;
+}
+
+#main {
+	top: 10%;
+	bottom: 2%;
+	width: 100%;
+	background-color: yellow;
+}
+
+.left {
+	top: 0px;
+	left: 0px;
+	width: 100px;
+	bottom: 0px;
+}
+
+#leftbuttons {
+	left: 15%;
+}
+
+
+#center {
+	top: 0px;
+	left: 100px;
+	right: 100px;
+	bottom: 0px;
+	background-color: green;
+	border: 3px ridge grey
+}
+
+button {
+	box-shadow: 3px 4px 2px #888888;
+}
+
+#divabout {
+	visibility: hidden;
+	position: absolute;
+	background-color: lightsteelblue;
+	width: 20%;
+	height: 35%;
+	right: 0px;
+	top: 0px;
+	box-shadow: 10px 10px 5px #888888;
+	border: 3px ridge grey
+	
+}
+
+#aboutinner {
+	margin-left:20px;	
+	margin-bottom: 20px;
+}
+
+.right {
+	top: 0px;
+	right: 0px;
+	width: 100px;
+	bottom: 0px;
+	background-color: red;
+}
+
+.footer {
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	height:2%;
+	background-color: grey;
+}
+
+.paint {
+	background-color: antiquewhite;
+	width: 100%;
+	height: 100%;
+}
+
+button {
+	-webkit-border-radius: 0px;
+}
+
+.tool {
+	width: 58px;
+	height: 57px;
+	margin: 2px;
+}
+
+button.color {
+	position: relative;
+	left: 20%;
+	border: 0px;
+	padding: 0px;
+	width: 58px;
+	height: 52px;
+	border: 2px solid #484848 ;
+}
+#black {
+	background-color: black;
+}
+
+#white {
+	background-color: white;
+}
+
+#blue {
+	background-color: blue;
+}
+
+#red {
+	background-color: red;
+}
+
+#green {
+	background-color: green;
+}
+
+#orange {
+	background-color: orange;
+}
+
+#purple {
+	background-color: purple;
+}
+
+#yellow {
+	background-color: yellow;
+}
+
+#grey {
+	background-color: grey;
+}
+
+#antiquewhite {
+	background-color: antiquewhite;
+}
+
+#new {
+	width: 50px;
+	height: 50px;
+	background-color: #C80000;
+}
+
+#logo {
+	top: -7px;
+	position: absolute;
+	left: 45%;
+	height: 100%;
+}
+
+#about {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+}
+#closedivabout {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	z-index: 10;
+}
+
+.menu {
+	background-color: lightsteelblue;
+}

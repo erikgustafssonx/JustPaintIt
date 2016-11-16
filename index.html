@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JustPaintIt!</title>
+		<meta charset="utf-8">
+		<!-- http://stackoverflow.com/questions/10614481/disable-double-tap-zoom-option-in-browser-on-touch-devices -->
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"> 
+		<link href="justpaintit.css" rel="stylesheet" type="text/css">
+		<!-- Inlucde jquery and jquery mobile for touchscreen support. -->
+		<!-- We choose to copy them into our project, because we want it to work offline -->
+		<script src="jquery-1.8.3.min.js"></script>
+		<script src="jquery.mobile.custom.min.js"></script>
+		
+		<!-- Includes our javascript file with all the painting functions -->
+		<script src="justpaintit.js"></script>
+	</head>
+	<body>
+		<div id="content">
+			<div class="header menu">
+				<button id="new">Clear All</button>	
+				<img id="logo" src="pics/loggo.png">
+				<button id="about">About</button>
+			</div>
+			<div id="main">
+				<div class="left menu">
+					<div id="leftbuttons">
+						<!-- Different tools on the left side of the screen -->
+						<button class="tool" type="button" id="circle" title="Circle"><img src="pics/circle.png"></button>
+						<button class="tool" type="button" id="square" title="Box"><img src="pics/square.png"></button>
+						<button class="tool" type="button" id="pen" title="Pen"><img src="pics/pen.png"></button>
+						<button class="tool" id="polygon" title="Polygon"><img src="pics/triangle.png"></button>
+						<button class="tool" id="polylinefill" title="Filled freeshape"><img src="pics/polyline.png"></button>
+						<button class="tool" id="flower" title="Flower"><img src="pics/heart.png"></button>
+						<button class="tool" id="eraser" title="Eraser"><img src="pics/eraser.png"></button>
+						<button class="tool" id="undo" title="undo"><img src="pics/undo.png"></button>
+					</div>
+					
+				</div>
+				<div id="center">
+					<!--About box-->
+					<div id="divabout">
+						<button id="closedivabout">X</button>
+						<div id="aboutinner">
+							<h3>JustPaintIt!</h3>
+							<p>
+							Developed by Erik Gustafsson<br>
+							& Andreas Wallén<br>
+							</p>
+							<p>
+							Feel free to use, create and have a lot of fun.
+							</p>
+						</div>
+					</div>
+					<!--Painting area-->
+					<svg class="paint">
+					</svg>
+				</div>
+				<div class="right menu">
+					<!-- Different colors to paint with -->
+					<button	 class="color" type="button" id="black"></button>
+					<button class="color" type="button" id="white"></button>
+					<button class="color" id="blue"></button>
+					<button class="color" id="red"></button>
+					<button class="color" id="green"></button>
+					<button class="color" id="orange"></button>
+					<button class="color" id="purple"></button>
+					<button class="color" id="yellow"></button>
+					<button class="color" id="grey"></button>
+					<button class="color" id="antiquewhite"></button>
+				</div>
+			</div>
+			<div class="footer menu">
+			</div>
+		</div>
+	</body>
+</html>
